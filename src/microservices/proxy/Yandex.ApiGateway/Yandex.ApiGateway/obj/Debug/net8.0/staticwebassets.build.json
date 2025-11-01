@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "GzRmdRlOINKXrviGpzuKxasyX2vL4TUKbdzSbqS4K34=",
+  "Source": "Yandex.ApiGateway",
+  "BasePath": "_content/Yandex.ApiGateway",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
