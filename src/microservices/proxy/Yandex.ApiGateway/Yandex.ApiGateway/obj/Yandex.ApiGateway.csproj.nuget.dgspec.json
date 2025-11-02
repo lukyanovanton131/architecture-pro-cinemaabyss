@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "D:\\_Git\\architecture-pro-cinemaabyss\\src\\microservices\\proxy\\Yandex.ApiGateway\\Yandex.ApiGateway\\Yandex.ApiGateway.csproj": {}
+    "/Users/lukyanovanton/Documents/GitHub/architecture-pro-cinemaabyss/src/microservices/proxy/Yandex.ApiGateway/Yandex.ApiGateway/Yandex.ApiGateway.csproj": {}
   },
   "projects": {
-    "D:\\_Git\\architecture-pro-cinemaabyss\\src\\microservices\\proxy\\Yandex.ApiGateway\\Yandex.ApiGateway\\Yandex.ApiGateway.csproj": {
+    "/Users/lukyanovanton/Documents/GitHub/architecture-pro-cinemaabyss/src/microservices/proxy/Yandex.ApiGateway/Yandex.ApiGateway/Yandex.ApiGateway.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\_Git\\architecture-pro-cinemaabyss\\src\\microservices\\proxy\\Yandex.ApiGateway\\Yandex.ApiGateway\\Yandex.ApiGateway.csproj",
+        "projectUniqueName": "/Users/lukyanovanton/Documents/GitHub/architecture-pro-cinemaabyss/src/microservices/proxy/Yandex.ApiGateway/Yandex.ApiGateway/Yandex.ApiGateway.csproj",
         "projectName": "Yandex.ApiGateway",
-        "projectPath": "D:\\_Git\\architecture-pro-cinemaabyss\\src\\microservices\\proxy\\Yandex.ApiGateway\\Yandex.ApiGateway\\Yandex.ApiGateway.csproj",
-        "packagesPath": "C:\\Users\\alukyanov\\.nuget\\packages\\",
-        "outputPath": "D:\\_Git\\architecture-pro-cinemaabyss\\src\\microservices\\proxy\\Yandex.ApiGateway\\Yandex.ApiGateway\\obj\\",
+        "projectPath": "/Users/lukyanovanton/Documents/GitHub/architecture-pro-cinemaabyss/src/microservices/proxy/Yandex.ApiGateway/Yandex.ApiGateway/Yandex.ApiGateway.csproj",
+        "packagesPath": "/Users/lukyanovanton/.nuget/packages/",
+        "outputPath": "/Users/lukyanovanton/Documents/GitHub/architecture-pro-cinemaabyss/src/microservices/proxy/Yandex.ApiGateway/Yandex.ApiGateway/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\alukyanov\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/lukyanovanton/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -69,7 +67,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.407/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.409/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
