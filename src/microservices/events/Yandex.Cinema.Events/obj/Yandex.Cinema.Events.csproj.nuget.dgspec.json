@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/Users/lukyanovanton/Documents/GitHub/architecture-pro-cinemaabyss/src/microservices/events/Yandex.Cinema.Events/Yandex.Cinema.Events.csproj": {}
+    "D:\\_Git\\architecture-pro-cinemaabyss\\src\\microservices\\events\\Yandex.Cinema.Events\\Yandex.Cinema.Events.csproj": {}
   },
   "projects": {
-    "/Users/lukyanovanton/Documents/GitHub/architecture-pro-cinemaabyss/src/microservices/events/Yandex.Cinema.Events/Yandex.Cinema.Events.csproj": {
+    "D:\\_Git\\architecture-pro-cinemaabyss\\src\\microservices\\events\\Yandex.Cinema.Events\\Yandex.Cinema.Events.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/lukyanovanton/Documents/GitHub/architecture-pro-cinemaabyss/src/microservices/events/Yandex.Cinema.Events/Yandex.Cinema.Events.csproj",
+        "projectUniqueName": "D:\\_Git\\architecture-pro-cinemaabyss\\src\\microservices\\events\\Yandex.Cinema.Events\\Yandex.Cinema.Events.csproj",
         "projectName": "Yandex.Cinema.Events",
-        "projectPath": "/Users/lukyanovanton/Documents/GitHub/architecture-pro-cinemaabyss/src/microservices/events/Yandex.Cinema.Events/Yandex.Cinema.Events.csproj",
-        "packagesPath": "/Users/lukyanovanton/.nuget/packages/",
-        "outputPath": "/Users/lukyanovanton/Documents/GitHub/architecture-pro-cinemaabyss/src/microservices/events/Yandex.Cinema.Events/obj/",
+        "projectPath": "D:\\_Git\\architecture-pro-cinemaabyss\\src\\microservices\\events\\Yandex.Cinema.Events\\Yandex.Cinema.Events.csproj",
+        "packagesPath": "C:\\Users\\alukyanov\\.nuget\\packages\\",
+        "outputPath": "D:\\_Git\\architecture-pro-cinemaabyss\\src\\microservices\\events\\Yandex.Cinema.Events\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/lukyanovanton/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\alukyanov\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -91,7 +93,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.409/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.407/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
