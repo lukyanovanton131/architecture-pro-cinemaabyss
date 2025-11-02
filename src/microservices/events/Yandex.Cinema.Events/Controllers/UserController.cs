@@ -3,6 +3,7 @@ using Mapster;
 using Microsoft.AspNetCore.Mvc;
 using Yandex.Cinema.Events.Messages;
 using Yandex.Cinema.Events.Requests;
+using Yandex.Cinema.Events.Response;
 
 namespace Yandex.Cinema.Events.Controllers;
 
@@ -14,7 +15,20 @@ public class UserController(IProducer<Guid, UserMessageDto> producer) : Controll
     public async Task<IActionResult> Create([FromBody] UserRequest request, CancellationToken cancellationToken)
     {
         var message = new Message<Guid, UserMessageDto>() {Key = Guid.NewGuid(), Value = request.Adapt<UserMessageDto>()};
-        await producer.ProduceAsync("user-events", message, cancellationToken);
-        return Ok();
+        var deliveryResult = await producer.ProduceAsync("user-events", message, cancellationToken);
+        var response = new Response.Response()
+        {
+            Status = "success",
+            Partition = deliveryResult.Partition,
+            Offset = deliveryResult.Offset.Value,
+            Event = new EventDto()
+            {
+                Id = message.Key.ToString(),
+                Type = "user",
+                Timestamp = DateTime.Now,
+                Payload = request
+            }
+        };
+        return Created("", response);
     }
 }

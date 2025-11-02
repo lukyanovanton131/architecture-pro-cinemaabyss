@@ -33,9 +33,6 @@ public class PercentageLoadBalancingPolicy : ILoadBalancingPolicy
         // Определяем, в какой диапазон попадает случайное число
         var currentPercentage = 0;
         
-        // if(randomValue < percentageConfig)
-        //     return new DestinationState("id", new DestinationModel(new DestinationConfig(){Address = _migrationConfig.MoviesServiceUrl}));
-        
         if (randomValue < percentageConfig)
         {
             return availableDestinations.FirstOrDefault(d => d.DestinationId == "monolith");
@@ -44,39 +41,5 @@ public class PercentageLoadBalancingPolicy : ILoadBalancingPolicy
         {
             return availableDestinations.FirstOrDefault(d => d.DestinationId == "movies-service");
         }
-        
-        
-        // foreach (var destination in availableDestinations)
-        // {
-        //     var percentage = percentageConfig.GetValueOrDefault(destination.DestinationId, 0);
-        //     
-        //     if (randomValue >= currentPercentage && randomValue < currentPercentage + percentage)
-        //     {
-        //         return destination;
-        //     }
-        //     
-        //     currentPercentage += percentage;
-        // }
-        
-        // Fallback: возвращаем первое доступное назначение
-        //return availableDestinations[0];
     }
-
-//     private Dictionary<string, int> GetPercentageConfiguration(ClusterState cluster)
-//     {
-//         var config = new Dictionary<string, int>();
-//         
-//         foreach (var destination in cluster.Destinations.Values)
-//         {
-//             if (destination.DestinationConfig.Metadata?.TryGetValue("Percentage", out var percentageObj) == true)
-//             {
-//                 if (int.TryParse(percentageObj?.ToString(), out int percentage))
-//                 {
-//                     config[destination.DestinationId] = percentage;
-//                 }
-//             }
-//         }
-//         
-//         return config;
-//     }
 }
