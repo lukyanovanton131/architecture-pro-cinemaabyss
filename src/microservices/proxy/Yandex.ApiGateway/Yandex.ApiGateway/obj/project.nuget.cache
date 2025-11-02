@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "RfovFcLnEOY=",
+  "dgSpecHash": "gHGfFerh1jk=",
   "success": true,
-  "projectFilePath": "D:\\_Git\\architecture-pro-cinemaabyss\\src\\microservices\\proxy\\Yandex.ApiGateway\\Yandex.ApiGateway\\Yandex.ApiGateway.csproj",
+  "projectFilePath": "/Users/lukyanovanton/Documents/GitHub/architecture-pro-cinemaabyss/src/microservices/proxy/Yandex.ApiGateway/Yandex.ApiGateway/Yandex.ApiGateway.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\alukyanov\\.nuget\\packages\\system.io.hashing\\8.0.0\\system.io.hashing.8.0.0.nupkg.sha512",
-    "C:\\Users\\alukyanov\\.nuget\\packages\\yarp.reverseproxy\\2.3.0\\yarp.reverseproxy.2.3.0.nupkg.sha512"
+    "/Users/lukyanovanton/.nuget/packages/system.io.hashing/8.0.0/system.io.hashing.8.0.0.nupkg.sha512",
+    "/Users/lukyanovanton/.nuget/packages/yarp.reverseproxy/2.3.0/yarp.reverseproxy.2.3.0.nupkg.sha512"
   ],
   "logs": []
 }

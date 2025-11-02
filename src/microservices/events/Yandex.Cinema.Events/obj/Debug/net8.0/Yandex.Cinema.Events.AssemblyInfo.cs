@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Yandex.Cinema.Events")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c1d5485b8cfd2637957301f833fb484e0b5cc402")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+41f41c66ac8119f46748718908582b1a978dc2a9")]
 [assembly: System.Reflection.AssemblyProductAttribute("Yandex.Cinema.Events")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Yandex.Cinema.Events")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
