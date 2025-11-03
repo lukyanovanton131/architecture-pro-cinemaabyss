@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Yandex.ApiGateway")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ce395794cd15c8082dd9ef892a05869c4046945b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3612b426da7af6e9865a277e79507355f80cb0e9")]
 [assembly: System.Reflection.AssemblyProductAttribute("Yandex.ApiGateway")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Yandex.ApiGateway")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
