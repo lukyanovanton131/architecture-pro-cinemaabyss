@@ -25,7 +25,7 @@ public class PercentageLoadBalancingPolicy : ILoadBalancingPolicy
             return null;
 
         // Получаем конфигурацию процентов из метаданных кластера
-        var percentageConfig = _migrationConfig.MoviesMigrationPercentage;//GetPercentageConfiguration(cluster);
+        var percentageConfig = _migrationConfig.MoviesMigrationPercentage;
         
         // Генерируем случайное число от 0 до 99
         var randomValue = _random.Next(100);
@@ -33,10 +33,8 @@ public class PercentageLoadBalancingPolicy : ILoadBalancingPolicy
         // Определяем, в какой диапазон попадает случайное число
         var currentPercentage = 0;
         
-        if (randomValue < percentageConfig)
-        {
+        if(percentageConfig==0 || randomValue < percentageConfig)
             return availableDestinations.FirstOrDefault(d => d.DestinationId == "monolith");
-        }
         else
         {
             return availableDestinations.FirstOrDefault(d => d.DestinationId == "movies-service");
