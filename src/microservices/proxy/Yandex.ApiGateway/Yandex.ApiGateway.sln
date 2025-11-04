@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yandex.ApiGateway", "Yandex.ApiGateway\Yandex.ApiGateway.csproj", "{EE61421B-E7F5-441F-B39C-D21646ED8A31}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yandex.Cinema.Events", "..\..\events\Yandex.Cinema.Events\Yandex.Cinema.Events.csproj", "{27704D33-1E90-46CF-BBDA-F09CF46ABBF7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EE61421B-E7F5-441F-B39C-D21646ED8A31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE61421B-E7F5-441F-B39C-D21646ED8A31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE61421B-E7F5-441F-B39C-D21646ED8A31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE61421B-E7F5-441F-B39C-D21646ED8A31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27704D33-1E90-46CF-BBDA-F09CF46ABBF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27704D33-1E90-46CF-BBDA-F09CF46ABBF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27704D33-1E90-46CF-BBDA-F09CF46ABBF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27704D33-1E90-46CF-BBDA-F09CF46ABBF7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

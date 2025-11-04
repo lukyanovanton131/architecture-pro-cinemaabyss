@@ -1,0 +1,43 @@
+@startuml
+title Cinemaabyss Container Diagram
+
+top to bottom direction
+
+!includeurl https://raw.githubusercontent.com/RicardoNiepel/C4-PlantUML/master/C4_Component.puml
+
+Person(user, "User", "Пользователь системы")
+Person(onlineCinema, "Online Cinema", "Онлайн-кинотеатры")
+Person(paymentSystem, "Payment System", "Платежная система")
+Person(recommendationSystem, "External Recommendation System", "Внешняя рекомендательная система")
+Person(s3, "S3", "Платежная система")
+
+System(CinemaabyssSystem, "Cinemaabyss System", "Стриминговый сервис Кинобездна")
+
+Container_Boundary(CinemaabyssSystem, "Cinemaabyss System") {
+  Container(MoviesService, "Сервис метаданных о фильмах", "Go", "Предоставляет метаданные фильма (жанры, актёры, оценки)")
+  Container(EventsService, "Сервис событий", "Go", "Обрабатывает коммуникацию между сервисами на основе событий")
+  Container(Database, "Database", "PostgreSQL", "Хранение данных о фильмах")
+  Container(MessageBus, "Шина сообщений", "Kafka", "Транспорт для событий в системе")
+  Container(ApiGateway, "Шлюз", ".net", "Маршрутизация запросов")
+  Container(Monolith, "Монолит", "Go", "Основная система")
+}
+
+
+Rel(user, ApiGateway, "Использует систему")
+Rel(ApiGateway, MoviesService,"Запросы о фильмах")
+Rel(ApiGateway, Monolith,"Запросы на управление пользователями, платежами, подписками")
+
+
+Rel(MoviesService, Database,"Чтение и запись данных о фильмах")
+Rel(MoviesService, MessageBus,"Пишет события фильмов (просмотр, оценка, добавление)")
+Rel(EventsService, MessageBus,"Читает события сервисов")
+
+Rel(Monolith, recommendationSystem,"Запросы рекомендаций")
+Rel(Monolith, paymentSystem,"Запросы на оплату")
+Rel(Monolith, MessageBus,"Пишет события платежей, фильмов, пользователей")
+Rel(Monolith, s3,"Пишет и читает")
+Rel(Monolith, Database,"Читает и пишет")
+Rel(Monolith, onlineCinema,"Читает потоковый контент")
+
+
+@enduml
